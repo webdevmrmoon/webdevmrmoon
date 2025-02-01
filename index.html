@@ -76,10 +76,10 @@
                         <div class="navSection">
                             <div class="navWrapper">
                                 <ul>
-                                    <li><a href="portfolio.html">Portfolio</a></li>
-                                    <li><a href="about.html">Services</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a class="navibtn" data-target="#Portfolio" href="#Portfolio">Portfolio</a></li>
+                                    <li><a class="navibtn" data-target="#Services" href="#Services">Services</a></li>
+                                    <li><a class="navibtn" data-target="#About" href="#About">About</a></li>
+                                    <li><a class="navibtn" data-target="#Contact" href="#Contact">Contact</a></li>
                                 </ul>
                             </div>
                             <div class="headerBtns">
@@ -119,11 +119,11 @@
                         <div class="bannerContent">
                             <div class="bnrText">
                                 <h1>Web Dev Mr Moon</h1>
-                                <h2>Crafting Digital and Creative Excellence for Your Business</h2>
+                                <h2>Crafting Stunning Designs, Websites, and Brands That Shine</h2>
                                 <p>
-                                    Crafting seamless digital experiences through web development and design.Crafting seamless digital experiences through web development and design.
+                                    I take your business to new heights with cutting-edge design, web development, and branding solutions.
                                 </p>
-                                <a href="javascript:void(0)" class="bannerBtn">About Me</a>
+                                <a href="javascript:void(0)"  data-target="#About" href="#About" class="navibtn bannerBtn">About Me</a>
                             </div>
                         </div>
                     </div>
@@ -131,7 +131,7 @@
             </div>
         </section>
 
-        <section class="myRecentWorks pt-50 pb-50">
+        <section class="myRecentWorks pt-50 pb-50 sectionTop" id="Portfolio">
             <div class="site-width" style="position: relative; z-index: 2;">
                 <div class="titleSection">
                     <h2>
@@ -145,8 +145,8 @@
                 <div class="portfolio">
                     <div class="tab-slider--nav">
                         <ul class="tab-slider--tabs tabs">
-                            <li class="tab-slider--trigger active" rel="UI_UX">UI/UX</li>
-                            <li class="tab-slider--trigger" rel="WebDev">Web Development</li>
+                            <li class="tab-slider--trigger active" rel="WebDev">Web Development</li>
+                            <li class="tab-slider--trigger " rel="UI_UX">UI/UX</li>
                             <li class="tab-slider--trigger" rel="Logo">Logo Design</li>
                             <li class="tab-slider--trigger" rel="Branding">Branding</li>
                         </ul>
@@ -154,24 +154,24 @@
 
 
                     <div class="tab-content">
-                        <div class="content active" id="UI_UX">
+                        <div class="content active" id="WebDev">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="portfolioCard">
                                         <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
+                                            <img src="assets/img/portfolio/1.jpg" alt="project">
                                         </div>
                                         <div class="portContent">
                                             <div class="portcontText">
                                                 <h3>
-                                                    Title Goes Here
+                                                    Globe Optimizers
                                                 </h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Globe Optimizers is an SEO website with a responsive frontend (HTML, CSS, JS) and Laravel backend. It offers SEO tools, analytics, and user-friendly dashboards to boost online visibility and organic traffic, ensuring scalability and security for businesses.
                                                 </p>
                                             </div>
                                             <div class="portCTA">
-                                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
+                                                <a href="https://globeoptimizers.com/" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -179,19 +179,19 @@
                                 <div class="col-md-6">
                                     <div class="portfolioCard">
                                         <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
+                                            <img src="assets/img/portfolio/physiosense.jpg" alt="project">
                                         </div>
                                         <div class="portContent">
                                             <div class="portcontText">
                                                 <h3>
-                                                    Title Goes Here
+                                                    Physiosense
                                                 </h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Physiosense is a Physio Care website designed and developed with HTML, CSS, and JavaScript for the frontend. I contributed to creating a responsive, user-friendly interface, while the backend was powered by Laravel for seamless functionality.
                                                 </p>
                                             </div>
                                             <div class="portCTA">
-                                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
+                                                <a href="https://www.physiosense.co.in/" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -199,19 +199,39 @@
                                 <div class="col-md-6">
                                     <div class="portfolioCard">
                                         <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
+                                            <img src="assets/img/portfolio/amit-celebration.jpg" alt="project">
                                         </div>
                                         <div class="portContent">
                                             <div class="portcontText">
                                                 <h3>
-                                                    Title Goes Here
+                                                    Amit Celebration
                                                 </h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Amit Celebration is a static website developed using HTML, CSS, and JavaScript during my tenure at my previous company. It showcases event decoration services (birthdays, baby welcomes, anniversaries) and generates inquiries, featuring a custom-designed logo.
+                                                </p>
+                                            </div>
+                                            <!-- <div class="portCTA">
+                                                <a href="https://www.physiosense.co.in/" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="portfolioCard">
+                                        <div class="portImg">
+                                            <img src="assets/img/portfolio/sns-enterprises.jpg" alt="project">
+                                        </div>
+                                        <div class="portContent">
+                                            <div class="portcontText">
+                                                <h3>
+                                                    SNS Enterprises
+                                                </h3>
+                                                <p>
+                                                    SNS Enterprises is a static website developed using HTML, CSS, and JavaScript, with banners and illustrations created using Adobe Suites. It showcases the company’s large-scale printing services, highlighting their expertise and capabilities.
                                                 </p>
                                             </div>
                                             <div class="portCTA">
-                                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
+                                                <a href="https://snsenterprises.co/" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -219,44 +239,64 @@
                                 <div class="col-md-6">
                                     <div class="portfolioCard">
                                         <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
+                                            <img src="assets/img/portfolio/impomed.jpg" alt="project">
                                         </div>
                                         <div class="portContent">
                                             <div class="portcontText">
                                                 <h3>
-                                                    Title Goes Here
+                                                    Impomed
                                                 </h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    ImpoMed is a medical awareness and medicine sales website developed using HTML, CSS, and JavaScript, with banners and illustrations designed in Adobe Suite. Created during my tenure at a previous company, it facilitates medicine inquiries and purchases.
                                                 </p>
                                             </div>
                                             <div class="portCTA">
-                                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
+                                                <a href="https://www.impomedhealthcare.com/" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="portfolioCard">
+                                        <div class="portImg">
+                                            <img src="assets/img/portfolio/feathermedia.de.jpg" alt="project">
+                                        </div>
+                                        <div class="portContent">
+                                            <div class="portcontText">
+                                                <h3>
+                                                    Feather Media
+                                                </h3>
+                                                <p>
+                                                    Feathermedia is a portfolio website developed using HTML, CSS, and JavaScript during my tenure at a previous company. It showcases the IT company’s services, projects, and expertise, highlighting their capabilities and achievements.
+                                                </p>
+                                            </div>
+                                            <div class="portCTA">
+                                                <a href="https://feathermedia.de/" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="content" id="WebDev">
+                        <div class="content " id="UI_UX">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="portfolioCard">
                                         <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
+                                            <img src="assets/img/portfolio/3.jpg" alt="project">
                                         </div>
                                         <div class="portContent">
                                             <div class="portcontText">
                                                 <h3>
-                                                    Title Goes Here
+                                                   Hourlee
                                                 </h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Hourlee is a user-centric app design (UI/UX) tailored for employers and job seekers. It features intuitive navigation, seamless job matching, and interactive dashboards, enhancing the hiring experience for businesses and career opportunities for seekers.
                                                 </p>
                                             </div>
-                                            <div class="portCTA">
+                                            <!-- <div class="portCTA">
                                                 <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -268,142 +308,64 @@
                                         <div class="portContent">
                                             <div class="portcontText">
                                                 <h3>
-                                                    Title Goes Here
+                                                    Precised Talent
                                                 </h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Precised Talent is a recruitment-focused static website built with HTML, CSS, and JavaScript. It offers a clean, responsive design for seamless job postings, Employer interactions, streamlining the hiring process for businesses and job seekers.
                                                 </p>
                                             </div>
-                                            <div class="portCTA">
+                                            <!-- <div class="portCTA">
                                                 <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="portfolioCard">
-                                        <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
-                                        </div>
-                                        <div class="portContent">
-                                            <div class="portcontText">
-                                                <h3>
-                                                    Title Goes Here
-                                                </h3>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                </p>
-                                            </div>
-                                            <div class="portCTA">
-                                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="portfolioCard">
-                                        <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
-                                        </div>
-                                        <div class="portContent">
-                                            <div class="portcontText">
-                                                <h3>
-                                                    Title Goes Here
-                                                </h3>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                </p>
-                                            </div>
-                                            <div class="portCTA">
-                                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                      
                         <div class="content" id="Logo">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="portfolioCard">
                                         <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
+                                            <img src="assets/img/portfolio/logo1.jpg" alt="project">
                                         </div>
                                         <div class="portContent">
                                             <div class="portcontText">
                                                 <h3>
-                                                    Title Goes Here
+                                                    Logo Designs
                                                 </h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    I designed Logos for company related to Manufacturing, Recruitment, ERP, Etc.
                                                 </p>
                                             </div>
-                                            <div class="portCTA">
+                                            <!-- <div class="portCTA">
                                                 <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="portfolioCard">
                                         <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
+                                            <img src="assets/img/portfolio/logo2.jpg" alt="project">
                                         </div>
                                         <div class="portContent">
                                             <div class="portcontText">
                                                 <h3>
-                                                    Title Goes Here
+                                                    Logo Designs
                                                 </h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    I designed Logos for company related to Manufacturing, Recruitment, ERP, Etc.
                                                 </p>
                                             </div>
-                                            <div class="portCTA">
+                                            <!-- <div class="portCTA">
                                                 <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="portfolioCard">
-                                        <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
-                                        </div>
-                                        <div class="portContent">
-                                            <div class="portcontText">
-                                                <h3>
-                                                    Title Goes Here
-                                                </h3>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                </p>
-                                            </div>
-                                            <div class="portCTA">
-                                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="portfolioCard">
-                                        <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
-                                        </div>
-                                        <div class="portContent">
-                                            <div class="portcontText">
-                                                <h3>
-                                                    Title Goes Here
-                                                </h3>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                </p>
-                                            </div>
-                                            <div class="portCTA">
-                                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                         <div class="content" id="Branding">
@@ -411,19 +373,36 @@
                                 <div class="col-md-6">
                                     <div class="portfolioCard">
                                         <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
+                                            <img src="assets/img/portfolio/harsanpharmacy-banner.jpg" alt="project">
                                         </div>
                                         <div class="portContent">
                                             <div class="portcontText">
                                                 <h3>
-                                                    Title Goes Here
+                                                    Harsan Pharmacy
                                                 </h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Harsan Pharmacy: Designed service showcase banners using Adobe Photoshop to highlight pharmacy offerings. The visuals were tailored to enhance brand appeal and effectively communicate services to customers.
                                                 </p>
                                             </div>
-                                            <div class="portCTA">
+                                            <!-- <div class="portCTA">
                                                 <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
+                                            </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="portfolioCard">
+                                        <div class="portImg">
+                                            <img src="assets/img/portfolio/UmangCIty_Brochure.jpg" alt="project">
+                                        </div>
+                                        <div class="portContent">
+                                            <div class="portcontText">
+                                                <h3>
+                                                    Umang City
+                                                </h3>
+                                                <p>
+                                                    Umang City: Designed a professional brochure using Adobe Photoshop to showcase residential society plots and flats. The brochure highlights amenities, layouts, effectively attracting potential buyers and investors.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -436,55 +415,33 @@
                                         <div class="portContent">
                                             <div class="portcontText">
                                                 <h3>
-                                                    Title Goes Here
+                                                    Sterlight Camotech Brochure
                                                 </h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Sterlight Camotech Brochure
                                                 </p>
                                             </div>
-                                            <div class="portCTA">
+                                            <!-- <div class="portCTA">
                                                 <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="portfolioCard">
                                         <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
+                                            <img src="assets/img/portfolio/banners-design1.jpg" alt="project">
                                         </div>
                                         <div class="portContent">
                                             <div class="portcontText">
                                                 <h3>
-                                                    Title Goes Here
+                                                    Post Design for Product Branding
                                                 </h3>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                    Post Design for Product Branding
                                                 </p>
                                             </div>
-                                            <div class="portCTA">
-                                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="portfolioCard">
-                                        <div class="portImg">
-                                            <img src="assets/img/portfolio/2.jpg" alt="project">
-                                        </div>
-                                        <div class="portContent">
-                                            <div class="portcontText">
-                                                <h3>
-                                                    Title Goes Here
-                                                </h3>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                                </p>
-                                            </div>
-                                            <div class="portCTA">
-                                                <a href="javascript:void(0)"><i class="fa-solid fa-arrow-right"></i></a>
-                                            </div>
+                                        
                                         </div>
                                     </div>
                                 </div>
@@ -503,7 +460,7 @@
               </div>
         </section>
 
-        <section class="ourServices pt-50 pb-50">
+        <section class="ourServices pt-50 pb-50 sectionTop" id="Services">
             <div class="site-width">
                 <div class="titleSection">
                     <h2>
@@ -521,7 +478,7 @@
                             </div>
                             <div class="serContent">
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, sint facilis error cum beatae nesciunt modi veritatis iste dicta aperiam.
+                                    Crafting intuitive and visually appealing user interfaces that enhance user experience. From wireframes to prototypes, I ensure seamless navigation and engaging interactions for your digital products.
                                 </p>
                             </div>
                             <div class="serCTA">
@@ -538,7 +495,7 @@
                             </div>
                             <div class="serContent">
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, sint facilis error cum beatae nesciunt modi veritatis iste dicta aperiam.
+                                    Building responsive, high-performance websites tailored to your business needs. Using the latest technologies, I create dynamic and scalable web solutions that drive growth and user engagement.
                                 </p>
                             </div>
                             <div class="serCTA">
@@ -555,7 +512,7 @@
                             </div>
                             <div class="serContent">
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, sint facilis error cum beatae nesciunt modi veritatis iste dicta aperiam.
+                                    Designing stunning visuals that communicate your brand’s story. From logos to marketing materials, I create eye-catching designs that leave a lasting impression on your audience.
                                 </p>
                             </div>
                             <div class="serCTA">
@@ -572,7 +529,7 @@
                             </div>
                             <div class="serContent">
                                 <p>
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, sint facilis error cum beatae nesciunt modi veritatis iste dicta aperiam.
+                                    Developing unique brand identities that resonate with your target audience. I create cohesive branding strategies, including logos, color schemes, and messaging, to elevate your market presence.
                                 </p>
                             </div>
                             <div class="serCTA">
@@ -586,14 +543,14 @@
             </div>
         </section>
 
-        <section class="technologies  pb-50">
+        <section class="technologies sectionTop pb-50" id="About">
             <div class="site-width">
                 <div class="titleSection">
                     <h2>
                         Technologies we work on
                     </h2>
                     <p>
-                        Harnessing the latest tools and platforms to deliver innovative and reliable solutions for your business.
+                        I take your business to new heights with cutting-edge design, web development, and branding solutions. With a passion for innovation and a keen eye for detail, I specialize in creating visually stunning and highly functional digital experiences that captivate audiences and drive results.
                     </p>
                 </div>
                 <div class="technoWrapper">
@@ -664,7 +621,7 @@
         </section>
 
 
-        <section class="contactUs pt-50 pb-50">
+        <section class="contactUs pt-50 pb-50 sectionTop" id="Contact">
             <div class="site-width">
                 <div class="contactWrapper">
                     <div class="row">
@@ -768,16 +725,16 @@
                         <a href="javascript:void(0)"><img src="assets/img/logo.svg" alt="logo"></a>
                     </div>
                 </div>
-                <div class="footerLinks">
+                <div class="footerLinks navWrapper">
                     <ul>
-                        <li><a href="javascript:void(0)">About</a></li>
-                        <li><a href="javascript:void(0)">Portfolio</a></li>
-                        <li><a href="javascript:void(0)">Services</a></li>
-                        <li><a href="javascript:void(0)">Contact</a></li>
+                        <li><a class="navibtn" data-target="#Portfolio" href="#Portfolio">Portfolio</a></li>
+                        <li><a class="navibtn" data-target="#Services" href="#Services">Services</a></li>
+                        <li><a class="navibtn" data-target="#About" href="#About">About</a></li>
+                        <li><a class="navibtn" data-target="#Contact" href="#Contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footerCopyright">
-                    <p>© <script>document.write(new Date().getFullYear())</script> All rights reserved by <a href="javascript:void(0)">AdYourPath</a></p>
+                    <p>© <script>document.write(new Date().getFullYear())</script> All rights reserved by <a href="index.html">Webdev Mrmoon</a></p>
                 </div>
             </div>
         </footer>
@@ -799,7 +756,22 @@
     <script src="assets/js/main.js"></script>
     <!-- <script src="https://rawgit.com/JulianLaval/canvas-particle-network/master/particle-network.min.js"></script>
     <script src="assets/js/particle.js"></script> -->
-    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>.
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.37"></script>
+    <script>
+         const lenis = new Lenis({
+            duration: 1.2, // Smoothness
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Custom ease
+            smoothWheel: true,
+            smoothTouch: true,
+        });
+        
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
 </body>
 
 </html>

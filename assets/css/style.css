@@ -280,11 +280,11 @@ p {
 
 
 /* CSS  */
-.wrapper {
+/* .wrapper {
     position: fixed;
     left: 0px;
     right: 0px;
-}
+} */
 
 .wrapper {
     background: #0f0715;
@@ -301,11 +301,25 @@ p {
     top: 0px;
     left: 0px;
     right: 0px;
+    transition: 0.4s ease-in-out;
 }
-.headerBanner.scroll-up {
-}
-.headerBanner.scroll-down {
+.headerSection.scroll-up {
     position: fixed;
+    z-index: 9;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #100818bf;
+    backdrop-filter: blur(7px);
+}
+.headerSection.scroll-down {
+    position: fixed;
+    z-index: 9;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background: #100818bf;
+    backdrop-filter: blur(7px);
 }
 .mainHeader {
     display: flex;
@@ -346,7 +360,7 @@ p {
     transition: 0.3s ease-in-out;
 }
 
-.navWrapper ul li a:hover {
+.navWrapper ul li a:hover, .navWrapper ul li a.active {
     transform: scale(0.9);
 }
 
@@ -376,12 +390,12 @@ p {
     transition: 0.3s ease-in-out;
 }
 
-.navWrapper ul li a:hover::after {
+.navWrapper ul li a:hover::after , .navWrapper ul li a.active::after  {
     visibility: visible;
     opacity: 1;
 }
 
-.navWrapper ul li a:hover::before {
+.navWrapper ul li a:hover::before , .navWrapper ul li a.active::before {
     visibility: visible;
     opacity: 1;
 }
@@ -617,7 +631,7 @@ p {
 }
 
 .portcontText p {
-    color: #c4c4c4;
+    color: #e1e1e1;
 }
 
 .portCTA a {
@@ -1199,7 +1213,7 @@ footer {
 
 .scrollToTop {
     background-color: #ffffff00;
-    border: 1px solid #ffffffd9;
+    border: 1px solid #ffffff29;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
     border-radius: 50%;
     color: #ffffff;

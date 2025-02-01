@@ -1,24 +1,4 @@
-$(function(){
-  const body = document.body,
-      jsScroll = document.getElementsByClassName('wrapper')[0],
-      height = jsScroll.getBoundingClientRect().height - 1,
-      speed = 0.05
 
-var offset = 0
-
-body.style.height = Math.floor(height) + "px"
-
-function smoothScroll() {
-    offset += (window.pageYOffset - offset) * speed
-    
-    var scroll = "translateY(-" + offset + "px) translateZ(0)"
-    jsScroll.style.transform = scroll
-    
-    raf = requestAnimationFrame(smoothScroll)
-}
-smoothScroll()
-
-})
 
 
 
@@ -104,36 +84,41 @@ $(document).ready(function () {
   var lastScrollTop = 0;
 
   function handleScroll() {
-      if ($(window).width() >= 768) { // Check if the viewport width is greater than or equal to 768px
-          var st = $(this).scrollTop();
+      if ($(window).width() >= 768) { // Check if the viewport width is >= 768px
+          var st = $(window).scrollTop(); // Get the scroll position of the window
+          
           if (st > lastScrollTop && st >= 100) {
               // downscroll code
-              $('.headerBanner').addClass('scroll-down').removeClass('scroll-up');
-          } else {
+              $('.headerSection').addClass('scroll-down').removeClass('scroll-up');
+          } else if (st < lastScrollTop) {
               // upscroll code
-              $('.headerBanner').addClass('scroll-up').removeClass('scroll-down');
+              $('.headerSection').addClass('scroll-up').removeClass('scroll-down');
           }
 
-          if (Math.abs($('.headerBanner').offset().top) <= 1) {
-              $('.headerBanner').removeClass('scroll-down scroll-up');
+          if (st <= 1) {
+              // Reset classes when at the top of the page
+              $('.headerSection').removeClass('scroll-down scroll-up');
           }
 
-          lastScrollTop = st;
+          lastScrollTop = st; // Update last scroll position
       } else {
-          // Remove sticky behavior and classes in responsive view
-          $('.headerBanner').removeClass('scroll-down scroll-up');
+          // For screens smaller than 768px, reset classes
+          $('.headerSection').removeClass('scroll-down scroll-up');
       }
   }
 
+  // Call the handleScroll function on scroll
   $(window).scroll(handleScroll);
 
   // Reapply logic when resizing window
   $(window).resize(function () {
       if ($(window).width() < 768) {
-          $('.headerBanner').removeClass('scroll-down scroll-up');
+          // Reset classes when the viewport is smaller than 768px
+          $('.headerSection').removeClass('scroll-down scroll-up');
       }
   });
 });
+
 
 
 // Scroll Top Button
@@ -183,4 +168,40 @@ $(document).ready(function(){
       width: "toggle"
     });
   });
+});
+
+
+// go to top with side bar nav
+$(function(){
+  $(window).scroll(function() {
+  
+  
+  }).scroll();
+  $('.navibtn').click(function() {
+      var target = $(this).data('target'); // Get the target section ID from data attribute
+      $('html, body').animate({
+        scrollTop: $(target).offset().top - 50 // Scroll to the top of the target section with an offset of 100px
+      }, 1000); // Adjust the duration of the animation as needed
+    });
+  
+  })
+  
+
+  $(document).ready(function() {
+    $(window).on('scroll', function() {
+        var windscroll = $(window).scrollTop();
+        if (windscroll >= 100) {
+            $('.sectionTop').each(function() {
+                var sectionID = $(this).attr('id');
+                if ($(this).position().top <= windscroll + 140) {
+                    $('.navWrapper ul li a.active').removeClass('active');
+                    $('.navWrapper ul li a[href="#' + sectionID + '"]').addClass('active');
+                }
+            });
+        } else {
+            $('.navWrapper ul li a.active').removeClass('active');
+            $('.navWrapper ul li a:first').addClass('active');
+        }
+    });
+
 });
