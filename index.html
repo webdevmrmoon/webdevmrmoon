@@ -629,24 +629,26 @@
                             <div class="contactForm">
                                 <h3>Let’s work together!</h3>
                                 <p>I design and code beautifully simple things and i love what i do. Just simple like that!</p>
-                                <form action="">
+                                <form action="https://api.web3forms.com/submit" method="POST">
+                                    <input type="hidden" name="access_key" value="2f7ad476-2956-4621-9738-80fa7266b92f">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <label for="FullName">Full Name</label>
-                                            <input type="text" placeholder="Enter Name">
+                                            <input type="text" name="name" placeholder="Enter Name" required>
                                         </div>
                                         <div class="col-md-6">
                                             <label for="Email">Enter Email</label>
-                                            <input type="text" placeholder="Enter Email">
+                                            <input type="email" name="email" placeholder="Enter Email" required>
                                         </div>
                                         <div class="col-md-6">
                                             <label for="Phone">Enter Phone</label>
-                                            <input type="text" placeholder="Enter Phone">
+                                            <input type="number" name="number" required placeholder="Enter Phone">
                                         </div>
                                         <div class="col-md-12">
                                             <label for="Message">Your Message</label>
-                                            <textarea rows="5"  placeholder="Your Message"></textarea>
+                                            <textarea rows="5" name="message" required placeholder="Your Message"></textarea>
                                         </div>
+                                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                                         <button type="submit" class="formBtn">Send Message</button>
                                     </div>
                                 </form>
