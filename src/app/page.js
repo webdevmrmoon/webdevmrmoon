@@ -241,7 +241,7 @@ export default function Home() {
             <div className="site-width">
               <div className="mainHeader">
                 <div className="logoSection">
-                  <a href="/" title="Himanshu Pratap | Webdev Mrmoon"><img src="assets/img/logo.svg" alt="img" /></a>
+                  <a href="/webdevmrmoon" title="Himanshu Pratap | Webdev Mrmoon"><img src="assets/img/logo.svg" alt="img" /></a>
                 </div>
                 <div className="navSection">
                   <div className="navWrapper">
