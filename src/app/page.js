@@ -197,10 +197,6 @@ export default function Home() {
   return (
 
     <div>
-      <>
-      
-      </>
-
       {/* <div id="preloader">
         <div id="ctn-preloader" className="ctn-preloader">
           <div className="animation-preloader">
