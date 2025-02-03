@@ -7,6 +7,7 @@ import "./assets/css/font-awesome/css/all.css";
 import "./assets/css/font-awesome/css/all.css";
 import "./assets/js/main.js";
 import Head from 'next/head';
+import Script from 'next/script';
 // import Script from "next/script";
 
 const geistSans = Geist({
@@ -47,6 +48,21 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="MyWebSite" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script asyncsrc="https://www.googletagmanager.com/gtag/js?id=G-YNFYFS75Y3"/>
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-YNFYFS75Y3');
+            `,
+          }}
+        />
       </Head>
 
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
