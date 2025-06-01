@@ -187,21 +187,45 @@ $(function(){
   })
   
 
-  $(document).ready(function() {
-    $(window).on('scroll', function() {
-        var windscroll = $(window).scrollTop();
-        if (windscroll >= 100) {
-            $('.sectionTop').each(function() {
-                var sectionID = $(this).attr('id');
-                if ($(this).position().top <= windscroll + 140) {
-                    $('.navWrapper ul li a.active').removeClass('active');
-                    $('.navWrapper ul li a[href="#' + sectionID + '"]').addClass('active');
-                }
-            });
-        } else {
-            $('.navWrapper ul li a.active').removeClass('active');
-            $('.navWrapper ul li a:first').addClass('active');
-        }
-    });
+//   $(document).ready(function() {
+//     $(window).on('scroll', function() {
+//         var windscroll = $(window).scrollTop();
+//         if (windscroll >= 100) {
+//             $('.sectionTop').each(function() {
+//                 var sectionID = $(this).attr('id');
+//                 if ($(this).position().top <= windscroll + 140) {
+//                     $('.navWrapper ul li a.active').removeClass('active');
+//                     $('.navWrapper ul li a[href="#' + sectionID + '"]').addClass('active');
+//                 }
+//             });
+//         } else {
+//             $('.navWrapper ul li a.active').removeClass('active');
+//             $('.navWrapper ul li a:first').addClass('active');
+//         }
+//     });
 
-});
+// });
+
+
+$(function(){
+  $('.technoSlider').owlCarousel({
+    loop:true,
+    margin:15,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout: 3000,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:6
+        }
+    }
+})
+
+})
