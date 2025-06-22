@@ -991,6 +991,9 @@ p {
 .technoCard {
     position: relative;
 }
+.technoWrapper .row .col-md-2:last-child .technoCard {
+    margin-top: 30px;
+}
 .techImg {
     width: 100%;
     text-align: center;
